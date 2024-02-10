@@ -1,0 +1,23 @@
+
+#Create a new user in the database with select rights only.
+
+CREATE USER 'select_only'@'localhost' IDENTIFIED BY 'password';
+GRANT SELECT ON SKELAR.* TO 'select_only'@'localhost';
+
+mysql -u select_only -p
+
+
+#backup
+
+mysqldump -u root -p skelar > /Users/olegfadeev/Desktop/SKELLAR/dump.sql
+
+
+#drop one table
+
+DROP TABLE x27_social_dialogs;
+
+
+#restore the database from backup
+
+mysqldump -u root -p skelar > /Users/olegfadeev/Desktop/SKELLAR/dump.sql
+
