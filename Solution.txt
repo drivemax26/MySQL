@@ -9,7 +9,7 @@ mysql -u select_only -p
 
 #backup
 
-mysqldump -u root -p skelar > /Users/olegfadeev/Desktop/SKELLAR/dump.sql
+mysqldump -u root -p skelar > /Users/olegfadeev/Desktop/SKELAR/dump.sql
 
 
 #drop one table
@@ -19,5 +19,5 @@ DROP TABLE x27_social_dialogs;
 
 #restore the database from backup
 
-mysql -u root -p skelar < /Users/olegfadeev/Desktop/SKELLAR/dump.sql
+mysql -u root -p skelar < /Users/olegfadeev/Desktop/SKELAR/dump.sql
 
